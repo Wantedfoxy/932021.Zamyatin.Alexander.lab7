@@ -27,9 +27,13 @@ input {
 }
 
 .square {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .triangle {
-    opacity: 0.5;
+    opacity: 0.8;
+}
+
+.circle {
+    opacity: 0.8;
 }

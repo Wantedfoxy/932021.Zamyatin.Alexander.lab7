@@ -72,5 +72,31 @@ function draw_triangle(number) {
 }
 
 function draw_circle(number) {
+    const drawField = document.querySelector('.draw-field');
 
+    for (let i = 0; i < number; i++) {
+        const circle = document.createElement('div');
+        circle.classList.add('circle');
+
+        const size = Math.random() * (300 - 50) + 50; // Размер от 50 до 300
+        const x = Math.random() * (1800 - size);
+        const y = (Math.random() * (800 - size)) + 88;
+
+        circle.style.position = 'absolute';
+        circle.style.left = x + 'px';
+        circle.style.top = y + 'px';
+        circle.style.width = size + 'px';
+        circle.style.height = size + 'px';
+        circle.style.backgroundColor = '#1A8D1A';
+        circle.style.borderRadius = '50%'; // Задаем форму круга
+
+        circle.addEventListener('click', function () {
+            circle.style.backgroundColor = '#FFFF1A';
+            setTimeout(function () {
+                circle.remove();
+            }, 100); // Исчезновение после 0.1 секунды
+        });
+
+        drawField.appendChild(circle);
+    }
 }
