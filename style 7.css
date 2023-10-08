@@ -1,0 +1,35 @@
+.form {
+    display: table;
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+}
+
+input {
+    width: 234px;
+    height: auto;
+    display: grid;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.square, .triangle, .circle {
+    width: max-content;
+    display: -ms-grid;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.draw-field {
+    width: 1800px;
+    height: 800px;
+    display: flex;
+}
+
+.square {
+    opacity: 0.5;
+}
+
+.triangle {
+    opacity: 0.5;
+}
